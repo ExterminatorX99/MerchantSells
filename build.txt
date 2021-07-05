@@ -1,0 +1,3 @@
+displayName = Merchant Sells More
+author = Exterminator
+version = 0.1

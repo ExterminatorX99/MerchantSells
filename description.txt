@@ -1,0 +1,4 @@
+Makes the Merchant sell more items
+
+Added items:
+Life Crystal
