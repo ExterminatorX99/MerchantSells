@@ -1,3 +1,4 @@
 displayName = Merchant Sells More
 author = Exterminator
-version = 0.1
+version = 0.2.4
+includeSource = true

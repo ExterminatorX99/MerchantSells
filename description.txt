@@ -2,3 +2,4 @@ Makes the Merchant sell more items
 
 Added items:
 Life Crystal
+Mana Crystal
