@@ -1,8 +1,5 @@
-using Terraria.ModLoader;
+namespace MerchantSells;
 
-namespace MerchantSells
+public class MerchantSells : Mod
 {
-	public class MerchantSells : Mod
-	{
-	}
 }
