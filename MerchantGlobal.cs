@@ -23,6 +23,8 @@ public class MerchantGlobal : GlobalNPC
 		NPCIDToItemsSold = null!;
 	}
 
+	public override bool AppliesToEntity(NPC entity, bool lateInstantiation) => NPCIDToItemsSold.ContainsKey(entity.type);
+
 	public override void SetupShop(int type, Chest shop, ref int nextSlot)
 	{
 		if (!NPCIDToItemsSold.TryGetValue(type, out int[] itemTypes))
