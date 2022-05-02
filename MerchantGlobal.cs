@@ -1,10 +1,13 @@
 ﻿using System.Collections.Generic;
+using Terraria;
+using Terraria.ID;
+using Terraria.ModLoader;
 
 namespace MerchantSells;
 
 public class MerchantGlobal : GlobalNPC
 {
-	public static Dictionary<int, int[]> NPCIDToItemsSold;
+	public static Dictionary<int, int[]> NPCIDToItemsSold = null!;
 
 	public override void Load()
 	{
@@ -27,7 +30,7 @@ public class MerchantGlobal : GlobalNPC
 
 	public override void SetupShop(int type, Chest shop, ref int nextSlot)
 	{
-		if (!NPCIDToItemsSold.TryGetValue(type, out int[] itemTypes))
+		if (!NPCIDToItemsSold.TryGetValue(type, out var itemTypes))
 			return;
 
 		foreach (int itemType in itemTypes)
